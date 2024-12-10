@@ -1,7 +1,6 @@
 import unittest
 
-from ascii_images import ascii_sides
-from dice import Dice, DiceType
+from ascii_dnd import ascii_sides, Dice, DiceType, calculate
 
 class TestDice(unittest.TestCase):
     def test_create_die(self):
