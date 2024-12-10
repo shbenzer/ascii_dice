@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+ascii_dice/__init__.py
+ascii_dice/ascii_images.py
+ascii_dice/dice.py
+ascii_dice.egg-info/PKG-INFO
+ascii_dice.egg-info/SOURCES.txt
+ascii_dice.egg-info/dependency_links.txt
+ascii_dice.egg-info/top_level.txt
+tests/test_dice.py
+tests/test_dnd.py
