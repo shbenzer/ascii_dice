@@ -1,6 +1,6 @@
 import unittest
 
-from ascii_dnd import ascii_sides, Dice, calculate
+from ascii_dice import ascii_sides, Dice, calculate
 
 class TestDnd(unittest.TestCase):
     def test_calculate_single_roll_without_advantage(self):

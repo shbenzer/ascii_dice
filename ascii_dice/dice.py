@@ -43,7 +43,7 @@ class Dice:
         self.show_images = show
 
 def calculate(rolls: int, die: int, modifier: int, advantage: int = None, show_images: bool = True ) -> int:
-    """Performs a simple DnD Calculation with Advantage/Disadvantage"""
+    """Performs a simple DnD Calculation with optional Advantage/Disadvantage and Modifiers"""
     if advantage not in [None, -1,1]:
         raise ValueError("Advantage must be -1 (Disadvantage) or 1 (Advantage)")
 
