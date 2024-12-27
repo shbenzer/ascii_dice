@@ -11,4 +11,3 @@ ascii_dice.egg-info/SOURCES.txt
 ascii_dice.egg-info/dependency_links.txt
 ascii_dice.egg-info/top_level.txt
 tests/test_dice.py
-tests/test_dnd.py

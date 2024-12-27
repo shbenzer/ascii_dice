@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="ascii_dice",
-    version="1.0.0",
+    version="1.1.0",
     author="Simon Benzer",
     author_email="SimonHBenzer@gmail.com",
     description="Python library that simulates dice rolling and Dungeons & Dragons (D&D) calculations with ASCII images",

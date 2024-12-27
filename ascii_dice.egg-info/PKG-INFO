@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ascii_dice
-Version: 1.0.0
+Version: 1.1.0
 Summary: Python library that simulates dice rolling and Dungeons & Dragons (D&D) calculations with ASCII images
 Home-page: https://github.com/shbenzer/ascii_dice
 Author: Simon Benzer

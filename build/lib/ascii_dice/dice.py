@@ -42,34 +42,35 @@ class Dice:
         """Sets whether to show images or not"""
         self.show_images = show
 
-def calculate(rolls: int, die: int, modifier: int, advantage: int = None, show_images: bool = True ) -> int:
-    """Performs a simple DnD Calculation with optional Advantage/Disadvantage and Modifiers"""
-    if advantage not in [None, -1,1]:
-        raise ValueError("Advantage must be -1 (Disadvantage) or 1 (Advantage)")
+    @staticmethod
+    def calculate(rolls: int, die: int, modifier: int, advantage: int = None, show_images: bool = True ) -> int:
+        """Performs a simple DnD Calculation with optional Advantage/Disadvantage and Modifiers"""
+        if advantage not in [None, -1,1]:
+            raise ValueError("Advantage must be -1 (Disadvantage) or 1 (Advantage)")
 
-    if show_images:
-        dice = Dice(show_images=True)
-    else:
-        dice = Dice(show_images=False)
+        if show_images:
+            dice = Dice(show_images=True)
+        else:
+            dice = Dice(show_images=False)
 
-    dice.set_dice(die)
+        dice.set_dice(die)
 
-    total = 0
+        total = 0
 
-    if advantage == 1:
-        for _ in range(rolls):
-            roll1 = dice.roll()
-            roll2 = dice.roll()
-            result = max(roll1, roll2)
-            total += result
-    elif advantage == -1:
-        for _ in range(rolls):
-            roll1 = dice.roll()
-            roll2 = dice.roll()
-            result = min(roll1, roll2)
-            total += result
-    else:
-        for _ in range(rolls):
-            result = dice.roll()
-            total += result
-    return total + modifier
+        if advantage == 1:
+            for _ in range(rolls):
+                roll1 = dice.roll()
+                roll2 = dice.roll()
+                result = max(roll1, roll2)
+                total += result
+        elif advantage == -1:
+            for _ in range(rolls):
+                roll1 = dice.roll()
+                roll2 = dice.roll()
+                result = min(roll1, roll2)
+                total += result
+        else:
+            for _ in range(rolls):
+                result = dice.roll()
+                total += result
+        return total + modifier
